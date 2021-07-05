@@ -78,9 +78,13 @@ public class Controllers implements Initializable
             pnlstatus.setBackground((new Background(new BackgroundFill(Color.rgb(255,255,255), CornerRadii.EMPTY, Insets.EMPTY))));
         }
 
-        else if(event.getSource() == btnDFA)
+        else if(event.getSource() == btnvalid)
         {
+            TextField txtq1 = new TextField();
+            String inputText = txtq1.getText();
 
+            validity automata = new validity();
+            automata.UserInputProcessor(inputText);
         }
     }
 
